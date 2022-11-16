@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tao form don gian</title>
+</head>
+<style>
+    body {
+        width: 700px;
+        height: 100px;
+
+    }
+
+    .title{
+        text-align: center;
+        font-size: 30px;
+        background-color: orange;
+        color:white
+         }
+
+    .title h1 {
+        margin: 0;
+    }
+    .main{
+
+        color: blue;
+        margin-top:0;
+        font-size:30px;
+
+         }
+    .main2 input{
+        width:300px;
+    }
+    .main3 input{
+        width:300px;
+    }
+    .main3{
+
+         margin-left: 60px;
+
+    }
+
+    .hobby {
+        display: flex;
+        justify-content: center;
+    }
+
+    .hobby label{
+        font-size: 30px;
+        color: blue;
+        margin-left: -250px;
+    }
+    .hobby2{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+
+</style>
+
+<body>
+    <form>
+        <div class="title">
+            <h1>
+            SỞ THÍCH CỦA BẠN
+            </h1>
+        </div>
+        <div class="main">
+            <div class="main2">
+                     <label for="">Họ Và Tên</label>
+                     <input name="Họ và tên" type="text"/><br>
+             </div>
+             <div class="main3">
+                    <label for="">Email</label>
+                    <input name="Email" type="text"/>
+             </div>
+        </div>
+        <div class="hobby">
+            <label  for="">Sở Thích</label>
+            <div class="hobby2" d>
+                <div><input type="checkbox"/><span>Thể Thao</span></div>
+                <div><input type="checkbox"/><span>Âm Nhạc</span></div>
+                <div><input type="checkbox"/><span>Đọc Sách</span></div>
+                <div><input type="checkbox"/><span>Lướt Web</span></div>
+                <div><input type="checkbox"/><span>Chơi Game</span></div>
+                <div><input type="checkbox"/><span>Điện ảnh</span></div>
+                <div><input type="checkbox"/><span>Du lịch</span></div>
+            </div>
+        </div>
+        <div style="margin-left: 140px">
+            <input type="submit" value="Gửi thông "/>
+
+            <input type="reset" value="Nhập Lại"/>
+        </div>
+    </form>
+</body>
+</html>
