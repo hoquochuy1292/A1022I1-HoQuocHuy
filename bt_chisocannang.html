@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>chi so can nang</title>
+</head>
+<body>
+<div >
+    <p>Weight(kg):</p>
+    <input type="text" id="weight" placeholder="kg">
+    <br>
+    <p>Height(M):</p>
+    <input type="text" id="height" placeholder=" m (.) cm"><br>
+    <button onclick="information()"> submit</button>
+    <p id="result"></p>
+</div>
+
+</body>
+<script>
+        function information() {
+            let weight = +document.getElementById('weight').value;
+            let height = +document.getElementById('height').value;
+            let heightTwo = height * height;
+            let bMI = (weight/heightTwo);
+            if(bMI < 18.5){
+                document.getElementById("result").innerText = 'Underweight';
+            }else if (bMI < 25){
+                document.getElementById("result").innerText = 'Normal';
+            }else if (bMI < 30){
+                document.getElementById("result").innerText = 'Overweight';
+            }else{
+                document.getElementById("result").innerText = 'Obese';
+            }
+
+        }
+</script>
+
+</html>
