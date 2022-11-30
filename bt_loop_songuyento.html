@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    let numbers = +prompt('Enter Number: ');
+    let count = 0;
+    let N = 2
+    if (count <= 0){
+        alert("vui lòng nhập giá trị nguyên dương!)
+    } else {
+        while (count < numbers) {
+            var snt = true;
+            for (let i = 2; i <= Math.sqrt(N); i++) {
+                if (N % i === 0) {
+                    snt = false;
+                    break;
+                }
+            }
+            if (snt == true) {
+                count++;
+                document.write(N + " ");
+            }
+            N++;
+        }
+
+    }
+
+
+</script>
+</html>
