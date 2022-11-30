@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vòng lặp 1</title>
+</head>
+<body>
+<button onclick="handlePlay()">Chơi</button>
+</body>
+<script>
+
+
+    function handlePlay() {
+        let startN = +prompt('Nhập khoảng số dự đoán bắt đầu là: ');
+        let endN = +prompt('Nhập khoảng số dự đoán kết thúc là: ');
+        let number = +prompt('Nhập số bạn muốn dự đoán là: ');
+
+        let check = startN + Math.floor(Math.random() * endN);
+
+        if (number === check) {
+            alert('Chúc mừng bạn đánh đúng');
+        } else if (number > check) {
+            alert('Số của bạn lớn hơn số dự đoán');
+        } else {
+            alert('Số của bạn nhỏ hơn số dự đoán');
+        }
+    }
+</script>
+</html>
